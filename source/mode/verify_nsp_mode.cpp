@@ -44,7 +44,7 @@ namespace tin::ui
             throw std::runtime_error("Previous view must be a ConsoleOptionsView!");
         }
 
-        std::string path = "@Sdcard://tinfoil/nsp/" + prevView->GetSelectedOptionValue()->GetText();
+        std::string path = "@Sdcard://switch/tinfoil/nsp/" + prevView->GetSelectedOptionValue()->GetText();
         tin::install::NSPVerifier nspVerifier(path);
 
         // Push a blank view ready for installation

@@ -23,7 +23,7 @@ namespace tin::ui
 
         nx::fs::IFileSystem fileSystem;
         fileSystem.OpenSdFileSystem();
-        nx::fs::IDirectory dir = fileSystem.OpenDirectory("/tinfoil/extracted/", FS_DIROPEN_DIRECTORY);
+        nx::fs::IDirectory dir = fileSystem.OpenDirectory("/switch/tinfoil/extracted/", FS_DIROPEN_DIRECTORY);
         u64 entryCount = dir.GetEntryCount();
 
         if (entryCount > 0)
@@ -113,7 +113,7 @@ namespace tin::ui
             m_ignoreReqFirmVersion = true;
         }
 
-        std::string path = "/tinfoil/extracted/" + m_name + "/";
+        std::string path = "/switch/tinfoil/extracted/" + m_name + "/";
         std::string fullPath = "@Sdcard:/" + path;
 
         // Push a blank view ready for installation

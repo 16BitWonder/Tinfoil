@@ -15,7 +15,7 @@ When ready, full releases will be located at:
 https://github.com/Adubbz/Tinfoil/releases/latest
 
 ## Usage
-1. Place NSPs in ``/tinfoil/nsp`` or extracted NSPs in ``/tinfoil/extracted``.
+1. Place NSPs in ``/switch/tinfoil/nsp`` or extracted NSPs in ``/switch/tinfoil/extracted``.
 2. Launch Tinfoil via the homebrew menu and install your NSPs.
 
 ## Network Install Instructions

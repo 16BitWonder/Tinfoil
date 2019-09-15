@@ -70,7 +70,7 @@ namespace tin::util
         std::vector<std::string> nspList;
         nx::fs::IFileSystem fileSystem;
         fileSystem.OpenSdFileSystem();
-        nx::fs::IDirectory dir = fileSystem.OpenDirectory("/tinfoil/nsp/", FS_DIROPEN_FILE);
+        nx::fs::IDirectory dir = fileSystem.OpenDirectory("/switch/tinfoil/nsp/", FS_DIROPEN_FILE);
 
         u64 entryCount = dir.GetEntryCount();
 

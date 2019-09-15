@@ -119,7 +119,7 @@ namespace tin::ui
 
         for (unsigned int i = 0; i < installList.size(); i++)
         {
-            std::string path = "@Sdcard://tinfoil/nsp/" + installList[i];
+            std::string path = "@Sdcard://switch/tinfoil/nsp/" + installList[i];
 
             try
             {
