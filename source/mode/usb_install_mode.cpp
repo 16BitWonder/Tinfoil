@@ -172,7 +172,7 @@ namespace tin::ui
             tin::install::nsp::USBNSP usbNSP(nspName);
 
             printf("Installing from %s\n", nspName.c_str());
-            tin::install::nsp::RemoteNSPInstall install(m_destStorageId, false, &usbNSP);
+            tin::install::nsp::RemoteNSPInstall install(m_destStorageId, true, &usbNSP);
 
             printf("Preparing install...\n");
             install.Prepare();
