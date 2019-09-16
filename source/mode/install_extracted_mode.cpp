@@ -89,8 +89,8 @@ namespace tin::ui
         auto view = std::make_unique<tin::ui::ConsoleOptionsView>();
         view->AddEntry("Ignore Required Firmware Version", tin::ui::ConsoleEntrySelectType::HEADING, nullptr);
         view->AddEntry("", tin::ui::ConsoleEntrySelectType::NONE, nullptr);
-        view->AddEntry("No", tin::ui::ConsoleEntrySelectType::SELECT, std::bind(&InstallExtractedNSPMode::OnIgnoreReqFirmVersionSelected, this));
         view->AddEntry("Yes", tin::ui::ConsoleEntrySelectType::SELECT, std::bind(&InstallExtractedNSPMode::OnIgnoreReqFirmVersionSelected, this));
+        view->AddEntry("No", tin::ui::ConsoleEntrySelectType::SELECT, std::bind(&InstallExtractedNSPMode::OnIgnoreReqFirmVersionSelected, this));
         manager.PushView(std::move(view));
     }
 

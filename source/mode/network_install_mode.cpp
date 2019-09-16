@@ -267,7 +267,7 @@ namespace tin::ui
             tin::install::nsp::HTTPNSP httpNSP(url);
 
             printf("Installing from %s\n", url.c_str());
-            tin::install::nsp::RemoteNSPInstall install(m_destStorageId, false, &httpNSP);
+            tin::install::nsp::RemoteNSPInstall install(m_destStorageId, true, &httpNSP);
 
             printf("Preparing install...\n");
             install.Prepare();
